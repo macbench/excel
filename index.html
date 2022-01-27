@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/filter-iframe.css">
+
+    <!--CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Execel Básico</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Curso de Excel |&nbsp;<div class="light"> Básico</div>
+        </div>
+        <a href="https://chat.whatsapp.com/Hi1kkVoE9g4LQlrqzJ2lNb" class="contacto"> <i
+                class="fab fa-whatsapp sapp"></i>&nbsp;&nbsp; Aderir ao grupo</a>
+    </header>
+
+    <section>
+        <div class="background">
+            <div id="fundo">
+                <div class="fundo1">
+                    <img src="img/excel-fundo.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <h1 class="welcome">Seja muito bem-vindo(a)!</h1>
+        <h2 class="sub-come">Pronto para exercitar o que aprendeu?</h2>
+        </div>
+
+        <!--VIDEOS FROM OWN IFRAM-->
+        <div id="mainIframe1">
+            <div class="responsive">
+                <iframe src="iframes/intro.html" height="496" width="504" scrolling='no' frameborder="0"
+                    allowfullscreen="" title="Publicação incorporada">
+                </iframe>
+
+            </div>
+        </div>
+
+
+
+        <!--COMPONETS FILTER-->
+        <div class="filter">
+            <input type="radio" id="btn1" name="radioBtn" checked>
+            <input type="radio" id="btn2" name="radioBtn">
+            <input type="radio" id="btn3" name="radioBtn">
+            <input type="radio" id="btn4" name="radioBtn">
+
+            <div class="botoes">
+                <label for="btn1" class="tag btn1" onclick="btn1()">Aula 01-02</label>
+                <label for="btn2" class="tag btn2" onclick="btn2()">Aula 03-04</label>
+                <label for="btn3" class="tag btn3" onclick="btn3()">Aula 05-06</label>
+                <label for="btn4" class="tag btn4" onclick="btn4()">Aula 07-08</label>
+            </div>
+        </div>
+        <!--END COMPONETS FILTER-->
+
+
+        <!--VIDEOS FROM OWN IFRAM GIVING WELCOMES TO VISITORS
+        <div class="content designCntt">
+            <div id="mainIframe">
+                <div class="responsive">
+                   A qui ficará o Iframe do meu Video de Boas vindas 
+                    <iframe frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/61ed171082ffbc0012e63de2" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="no" allownetworking="all"></iframe>
+               
+
+                </div>
+            </div>
+        </div>
+    -->
+
+        <div class="flexy">
+            <div style="width: 100%;" class="quiz ex1">
+                <div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;">
+                    <iframe frameborder="0" width="1200" height="675"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                        src="https://view.genial.ly/61eea157fb99ca0012e6d82f" type="text/html"
+                        allowscriptaccess="always" allowfullscreen="true" scrolling="no" allownetworking="all">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="content off" style="display: none;">
+            <div id="mainIframe">
+                <div class="responsive">
+                    <img src="img/no-content.png" alt="">
+
+
+                </div>
+            </div>
+            <div class="description">
+                <h2> Conteúdo indisponível</h2>
+                <p>Preparando o melhor conteúdo pra você!</p>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+    <footer>
+        <div class="copy"> <a href="copyright.html">Copyright &copy; 2022</a> | Created by HELDER MACHAVA</div>
+    </footer>
+
+    <div id="preloader"></div>
+
+
+    <script src="js/script.js"></script>
+
+    <script>
+        var loader = document.querySelector('#preloader')
+        window.addEventListener("load", function () {
+            loader.style.display = "none  "
+        })
+    </script>
+
+</body>
+
+</html>

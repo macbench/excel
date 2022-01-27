@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/plyr/plyr.css">
+    <script src="../lib/plyr/plyr.polyfilled.js"></script>
+    <style>
+        /* PLYR LIBRARY STYLE*/
+        :root {
+            --plyr-color-main: #27c7a4;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <video id="player" playsinline controls data-poster="../img/buffetPoster.jpg">
+        <source src="../video/introdution.mp4" type="video/mp4" />
+
+        <!-- Captions are optional -->
+        <track kind="captions" label="Português" src="../doc/lang/legenda.vtt" srclang="pt" default/>
+
+        <track kind="captions" label="English" src="../doc/lang/" srclang="en"/>
+
+    </video>
+
+    <script>
+        const player = new Plyr('#player') 
+    </script>
+</body>
+
+</html>

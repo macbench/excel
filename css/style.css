@@ -1,0 +1,336 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --azul-claro: #2294b1;
+    --fundo: #ffffff;
+    --cabecalho: #038065;
+    --rodape: #073027;
+    --azul-escuro: #383838c1;
+    --azul-fonte: #023047;
+
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    left: 0;
+    top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--azul-fonte);
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fundo);
+    color: #fff;
+
+}
+
+header {
+    background-color: var(--cabecalho);
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0px .5px 8px #00000052;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-grow: .9;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: center;
+    width: 180px;
+   /* background-color: #ff000044;*/
+
+    color: #fff;
+}
+.light{
+    font-weight: 400;
+}
+
+/*Animation*/
+/*FRAMES*/
+@keyframes light-contact {
+
+    50% {
+        color:#5e5d5d5e;
+    }
+}
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8em;
+    font-weight: 400;
+    padding: 20px;
+    margin: 5px 5px 5px 0;
+    text-align: center;
+    border-radius: 22px;
+    background-color: #ff000044;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    animation-name: light-contact;
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+}
+
+.sapp{
+    font-size: 1.7em;
+}
+
+section {
+    flex: 1 0 auto;
+    color: var(--azul-fonte);
+}
+
+.perfil {
+    display: flex;
+    width: 100%;
+    padding-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #ff000025;*/
+}
+.fundo {
+    max-width: 1366px;
+    margin: 0 auto;
+    /*padding: 100px 0 0;*/
+    padding: 50px 0 0;
+    
+}
+
+.fundo1 {
+    width: 100%;
+    height: 0;
+    padding-bottom: 40%;
+    margin-top: 48px;
+    position: relative;
+    
+}
+
+.fundo1 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+/*
+.img {
+    background-color: var(--azul-escuro);
+    width: 100%;
+    height: 420px;
+    background-image: url(../img/excel-fundo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+*/
+.welcome {
+    font-size: 2.5em;
+    text-align: center;
+    margin:30px 0 5px 0;
+    width: 100%;
+}
+.sub-come{
+    padding-top: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 0 30px 0;
+    width: 100%;
+}
+
+/**********************************/
+/********* IFRAME RESPONSIVE **********/
+#mainIframe1 {
+    max-width: 900px;
+    margin: 0 auto;
+    /*padding: 100px 0 0;*/
+    padding: 15px 0 65px 0;
+}
+
+#mainIframe {
+    max-width: 600px;
+    min-width: 250px;
+    margin: 0 auto;
+    /*padding: 100px 0 0;*/
+    padding: 50px 0 0;
+}
+
+.responsive {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.responsive img,
+iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.off{
+    margin-top: 35px;
+}
+.description{
+    text-align: center;
+    font-size: .9em;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    flex-shrink: 0;
+    width: 100%;
+    height: 40px;
+    background-color: var(--rodape);
+    font-weight: 300;
+    margin-top: 250px;
+}
+
+.copy {
+    line-height: 40px;
+    text-align: center;
+    font-size: .7em;
+}
+
+.copy a{
+    color:#fff;   
+}
+.copy a:hover{
+    text-decoration: underline;
+}
+
+
+
+/********************************/
+@media screen and (max-width:670px) {
+    .welcome {
+        font-size: 1.9em;
+    }
+    .sub-come{
+        font-size: 1.2em;
+    }
+   
+}
+
+@media screen and (max-width:490px) {
+    
+    .logo {
+        flex-grow: .9;
+        font-size: 1.1em;
+  
+    }
+        
+}
+@media screen and (max-width:460px) {
+    
+    .logo {
+        flex-grow: .8;
+        font-size: 1em;
+        width: 180px;
+  
+    }
+    .welcome {
+        font-size: 1.5em;
+    }
+    .sub-come{
+        font-size: 1em;
+    }
+      
+}   
+@media screen and (max-width:430px) {
+    .logo {
+        flex-grow: .8;
+        font-size: .93em;
+        width: 180px;
+  
+    }
+    
+}
+@media screen and (max-width:385px) {
+    
+    .logo {
+        flex-grow: .9;
+        font-size: 0.9em;
+  
+    }
+        
+}
+@media screen and (max-width:320px) {
+    
+    .logo {
+        flex-grow: .9;
+        font-size: 0.85em;
+  
+    }
+    .contacto {
+        font-size: .65em;
+        padding: 10px;
+        border-radius: 24px;
+    }  
+    
+    .welcome {
+        font-size: 1.35em;
+    }
+    .sub-come{
+        font-size: 1.1em;
+    }
+    
+        
+}
+
+
+

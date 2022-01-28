@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css">
     <link rel="stylesheet" href="css/filter-iframe.css">
 
     <!--CDN-->
+    <!--SWIPERR-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- FONT AWESOME CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,6 +31,48 @@
         <a href="https://chat.whatsapp.com/Hi1kkVoE9g4LQlrqzJ2lNb" class="contacto"> <i
                 class="fab fa-whatsapp sapp"></i>&nbsp;&nbsp; Aderir ao grupo</a>
     </header>
+
+        <!-- home section starts  -->
+
+        <section class="home" id="home">
+
+            <div class="swiper-container home-slider">
+    
+                <div class="swiper-wrapper wrapper">
+    
+                    <div class="swiper-slide slide">
+                        <div class="image">
+                            <img src="img/excel-fundo.jpg" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <a href="#order" class="btn">Encomendar</a>
+   
+                        </div>
+                        <div class="image">
+                            <img src="images/donuts.jpg" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide slide">
+                        <div class="image">
+                            <img src="images/home-img-3.png" alt="">
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="swiper-pagination"></div>
+    
+            </div>
+    
+        </section>
+    
+        <!-- home section ends -->
+    
+    
 
     <section>
         <div class="background">
@@ -125,17 +172,16 @@
         <div class="copy"> <a href="copyright.html">Copyright &copy; 2022</a> | Created by HELDER MACHAVA</div>
     </footer>
 
+
+
+
     <div id="preloader"></div>
 
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script src="js/script.js"></script>
 
-    <script>
-        var loader = document.querySelector('#preloader')
-        window.addEventListener("load", function () {
-            loader.style.display = "none  "
-        })
-    </script>
 
 </body>
 

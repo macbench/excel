@@ -21,13 +21,19 @@
     top: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none; border:none;
+    transition: all .2s linear;
+
 }
 
 a {
     color: var(--azul-fonte);
     text-decoration: none;
 }
-
+/*
+html{
+    overflow: hidden;
+}*/
 html, body {
     height: 100%;
 }
@@ -99,6 +105,61 @@ header {
 .sapp{
     font-size: 1.7em;
 }
+/*SILDER*/
+.swiper-container{
+    overflow: hidden
+}
+
+.home{
+    padding:2rem 9%;
+    margin-top: 50px;
+    color: red;
+    background-color: lightgray;
+    
+}
+.home .home-slider .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem; 
+    padding-top: 9rem;
+
+}
+
+.home .home-slider .slide .content{
+    flex:1 1 45rem;
+}
+
+.home .home-slider .slide .image{
+    flex:1 1 45rem;
+}
+
+.home .home-slider .slide .image img{
+    width: 100%;
+}
+
+.home .home-slider .slide .content span{
+    color:var(--green);
+    font-size: 2.5rem;
+}
+
+.home .home-slider .slide .content h3{
+    color:var(--black);
+    font-size: 4.5rem;
+}
+
+.home .home-slider .slide .content p{
+    color:var(--light-color);
+    font-size: 2.2rem;
+    padding:.5rem 0;
+    line-height: 1.5;
+}
+
+.swiper-pagination-bullet-active{
+    background:var(--green);
+}
+
+/*SLIDER END*/
 
 section {
     flex: 1 0 auto;

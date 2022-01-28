@@ -138,25 +138,16 @@ header {
     width: 100%;
 }
 
-.home .home-slider .slide .content span{
-    color:var(--green);
-    font-size: 2.5rem;
-}
-
-.home .home-slider .slide .content h3{
-    color:var(--black);
-    font-size: 4.5rem;
-}
-
+/*
 .home .home-slider .slide .content p{
     color:var(--light-color);
     font-size: 2.2rem;
     padding:.5rem 0;
     line-height: 1.5;
 }
-
+*/
 .swiper-pagination-bullet-active{
-    background:var(--green);
+    background:var(--cabecalho);
 }
 
 /*SLIDER END*/

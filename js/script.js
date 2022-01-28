@@ -37,7 +37,8 @@ function btn2() {
 
 }
 
-//SWIPER SLIDE
+//SWIPER SLIDE CODE
+
 var swiper = new Swiper(".home-slider", {
     spaceBetween: 30,
     centeredSlides: true,
@@ -77,8 +78,9 @@ var swiper = new Swiper(".home-slider", {
   });
   
 
-  //LOADER
+  //LOADER CODE
+
   var loader = document.querySelector('#preloader')
   window.addEventListener("load", function () {
-      loader.style.display = "none  "
+      loader.style.display = "none"
   })

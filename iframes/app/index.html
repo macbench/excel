@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="all">
+        <!-- start Quiz button -->
+        <div class="start_btn"><button>Resolver</button></div>
+
+        <!-- Info Box -->
+        <div class="info_box">
+            <div class="info-title"><span>Parámetros do Exercício</span></div>
+            <div class="info-list">
+                <div class="info"><strong>1.</strong> Voçê terá apenas <span>20 segundos</span> por cada questão.</div>
+                <div class="info"><strong>2.</strong> Uma vez respondida a questão, não poderá a reverter.</div>
+                <div class="info"><strong>3.</strong> Não será possível selecionar uma resposta após ao fim do tempo.</div>
+                <div class="info"><strong>4.</strong> Não será possivel sair do questionário após o ter iniciado, pelo que deverá termina-lo.</div>
+                <div class="info"><strong>5.</strong> A pontuação final será com base nas respostas correctas que obtiver!</div>
+            </div>
+            <div class="buttons">
+                <button class="quit">Cancelar</button>
+                <button class="restart">Continuar</button>
+            </div>
+        </div>
+
+        <!-- Quiz Box -->
+        <div class="quiz_box">
+            <header>
+                <div class="title">Questionário</div>
+                <div class="timer">
+                    <div class="time_left_txt">Tempo</div>
+                    <div class="timer_sec">20</div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+            <section>
+                <div class="que_text">
+                    <!-- Here I've inserted question from JavaScript -->
+                </div>
+                <div class="option_list">
+                    <!-- Here I've inserted options from JavaScript -->
+                </div>
+            </section>
+
+            <!-- footer of Quiz Box -->
+            <footer>
+                <div class="total_que">
+                    <!-- Here I've inserted Question Count Number from JavaScript -->
+                </div>
+                <button class="next_btn">Próximo</button>
+            </footer>
+        </div>
+
+        <!-- Result Box -->
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">You've completed the Quiz!</div>
+            <div class="score_text">
+                <!-- Here I've inserted Score Result from JavaScript -->
+            </div>
+            <div class="buttons">
+                <button class="restart">Repetir</button>
+                <button class="quit">Sair</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

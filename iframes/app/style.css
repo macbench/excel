@@ -8,12 +8,12 @@
 }
 
 body{
-    background: #007bff;
+    background: #1e6d62d7;
 }
 
 ::selection{
     color: #fff;
-    background: #007bff;
+    background: #10685c;
 }
 
 .all{

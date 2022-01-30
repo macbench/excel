@@ -153,13 +153,13 @@ function showResult(){
     const star = document.querySelector(".stars");
     if (userScore > 3){ // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
-        let scoreTag = '<span> e Parabéns! 🎉, Você acertou <p>'+ userScore +'</p> dentro de<p>'+ questions.length +' questões</p></span>';
+        let scoreTag = '<br>Parabéns! 🎉, Você acertou <strong>'+ userScore +'</strong> dentro de<strong>'+ questions.length +' questões</strong><br><br>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
         let oneStar = '<i class="fas fa-star"></i>';
         star.innerHTML = oneStar + oneStar + oneStar ;
     }
     else if(userScore > 1){ // if user scored more than 1
-        let scoreTag = '<span> 😎 você acertou <p>'+ userScore +'</p> dentro de <p>'+ questions.length +' questões</p></span>';
+        let scoreTag = '<br>😎 Acertou <strong>'+ userScore +'</strong> dentro de <strong>'+ questions.length +' questões</strong> <br><br>';
         scoreText.innerHTML = scoreTag;
         let oneStar = '<i class="fas fa-star"></i>';
         star.innerHTML = oneStar + oneStar;

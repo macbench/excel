@@ -357,7 +357,7 @@ footer button.show{
     font-size: 20px;
     font-weight: 700;
 }
-
+/*
 .result_box .score_text span{
     display: flex;
     margin: 10px 0;
@@ -369,7 +369,7 @@ footer button.show{
     padding: 0 4px;
     font-weight: 600;
 }
-
+*/
 .result_box .buttons{
     display: flex;
     margin: 20px 0;
@@ -461,7 +461,7 @@ footer button.show{
         font-size: 13px;
         text-align: center;
     }
-    
+  /*  
     .result_box .score_text span{
         display: flex;
         flex-direction: column;
@@ -475,7 +475,7 @@ footer button.show{
         font-weight: 600;
     }
     
-    
+    */
     
 }
 @media screen and (max-width:540px) {

@@ -150,18 +150,27 @@ function showResult(){
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
     result_box.classList.add("activeResult"); //show result box
     const scoreText = result_box.querySelector(".score_text");
+    const star = document.querySelector(".stars");
     if (userScore > 3){ // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
-        let scoreTag = '<span>and congrats! 🎉, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span> e Parabéns! 🎉, Você acertou <p>'+ userScore +'</p> dentro de<p>'+ questions.length +' questões</p></span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
+        let oneStar = '<i class="fas fa-star"></i>';
+        star.innerHTML = oneStar + oneStar + oneStar ;
     }
     else if(userScore > 1){ // if user scored more than 1
-        let scoreTag = '<span>and nice 😎, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span> 😎 você acertou <p>'+ userScore +'</p> dentro de <p>'+ questions.length +' questões</p></span>';
         scoreText.innerHTML = scoreTag;
+        let oneStar = '<i class="fas fa-star"></i>';
+        star.innerHTML = oneStar + oneStar;
+
     }
     else{ // if user scored less than 1
-        let scoreTag = '<span>and sorry 😐, You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<br>😐 Apenas acertou <strong>'+ userScore +'</strong> dentro de <strong>'+ questions.length +' questões </strong> <br>Parece que precisa de revisar alguns conceitos!<br><br>';
         scoreText.innerHTML = scoreTag;
+        let oneStar = '<i class="fas fa-star"></i>';
+        star.innerHTML = oneStar;
+
     }
 }
 
@@ -195,7 +204,7 @@ function startTimer(time){
 }
 
 function startTimerLine(time){
-    counterLine = setInterval(timer, 40);
+    counterLine = setInterval(timer, 43);
     function timer(){
         time += 1; //upgrading time value with 1
         time_line.style.width = time + "px"; //increasing width of time_line with px by time value

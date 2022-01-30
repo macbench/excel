@@ -355,7 +355,7 @@ footer button.show{
 
 .result_box .complete_text{
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .result_box .score_text span{
@@ -444,6 +444,37 @@ footer button.show{
         font-size: 10px;
         line-height: 22px;
     }
+
+    .result_box .icon{
+        font-size: 75px;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+    
+
+    .result_box .complete_text{
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .result_box .score_text{
+        font-size: 13px;
+        text-align: center;
+    }
+    
+    .result_box .score_text span{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        font-size: 10px;
+        font-weight: 500;
+    }
+    
+    .result_box .score_text span p{
+        padding: 0 4px;
+        font-weight: 600;
+    }
+    
     
     
 }

@@ -34,26 +34,26 @@
                 class="fab fa-whatsapp sapp"></i>&nbsp;&nbsp; Aderir ao grupo</a>
     </header>
 
-        <!-- home section starts  -->
+    <!-- home section starts  -->
 
-        <section class="home" id="home">
+    <section class="home" id="home">
 
-            <div class="swiper-container home-slider">
-    
-                <div class="swiper-wrapper wrapper">
-    
-                    <div class="swiper-slide slide">
-                        <div class="image">
-                            <img src="img/fundo-helder.jpg" alt="Hélder apontado para o quadro">
-                        </div>
+        <div class="swiper-container home-slider">
+
+            <div class="swiper-wrapper wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="img/fundo-helder.jpg" alt="Hélder apontado para o quadro">
                     </div>
-    
-                    <div class="swiper-slide slide">
-                        <div class="image">
-                            <img src="img/excel-fundo.jpg" alt="Ilustração de Excel => extraida do drible">
-                        </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="img/excel-fundo.jpg" alt="Ilustração de Excel => extraida do drible">
                     </div>
-                    <!--
+                </div>
+                <!--
                     <div class="swiper-slide slide">
                         <div class="content">
                             <a href="#order" class="btn">content3</a>
@@ -64,17 +64,17 @@
                         </div>
                     </div>
                     -->
-                </div>
-    
-                <div class="swiper-pagination"></div>
-    
             </div>
-    
-        </section>
-    
-        <!-- home section ends -->
-    
-    
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+
 
     <section>
 
@@ -123,7 +123,7 @@
             </div>
         </div>
     -->
- <!--CODE EMBEED FROM GEANILLY
+        <!--CODE EMBEED FROM GEANILLY
         <div class="flexy">
             <div style="width: 100%;" class="quiz ex1">
                 <div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;">
@@ -137,34 +137,34 @@
 
         </div>
 -->
-<div class="flexy">
-    <div style="width: 100%;" class="quiz ex1">
-        <div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 550px;">
-            <iframe frameborder="0" width="1200" height="675"
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-                src="iframes/app/index.html" type="text/html"
-                allowscriptaccess="always" allowfullscreen="true" scrolling="no" allownetworking="all">
-            </iframe>
-        </div>
-    </div>
-
-
-
-
-        <div class="content off" style="display: none;">
-            <div id="mainIframe">
-                <div class="responsive">
-                    <img src="img/no-content.png" alt="">
-
-
+        <div class="flexy">
+            <div style="width: 100%;" class="quiz ex1">
+                <div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 550px;">
+                    <iframe frameborder="0" width="1200" height="675"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                        src="iframes/app/index.html" type="text/html" allowscriptaccess="always" allowfullscreen="true"
+                        scrolling="no" allownetworking="all">
+                    </iframe>
                 </div>
             </div>
-            <div class="description">
-                <h2> Conteúdo indisponível</h2>
-                <p>Preparando o melhor conteúdo pra você!</p>
-            </div>
 
-        </div>
+
+
+
+            <div class="content off" style="display: none;">
+                <div id="mainIframe">
+                    <div class="responsive">
+                        <img src="img/no-content.png" alt="">
+
+
+                    </div>
+                </div>
+                <div class="description">
+                    <h2> Conteúdo indisponível</h2>
+                    <p>Preparando o melhor conteúdo pra você!</p>
+                </div>
+
+            </div>
 
 
 
@@ -183,10 +183,53 @@
 
     <div id="preloader"></div>
 
+    <script>
+        //CONTENT TO BE FILTER (Cntt)
+        var Ex1 = document.querySelector('.ex1')
+        var Ex2 = document.querySelector('.ex2')
+        var Ex3 = document.querySelector('.ex3')
+        var Ex4 = document.querySelector('.ex4')
 
-    <script src="lib/swiper/swiper-bundle.min.js"></script>
+        var noContent = document.querySelector('.off')
+
+
+        // END OF CONTENT TO BE FILTER (Cntt)
+
+        function btn1() {
+            if (Ex1.style.display === 'none' || noContent.style.display === 'block') {
+                Ex1.style.display = 'block'
+                noContent.style.display = 'none'
+
+            }
+            else {
+                Ex1.style.display = 'block'
+                noContent.style.display = 'none'
+
+            }
+
+        }
+
+        function btn2() {
+            if (Ex1.style.display === 'block' || noContent.style.display === 'none') {
+                Ex1.style.display = 'none'
+                noContent.style.display = 'block'
+            }
+            else {
+                Ex1.style.display = 'none'
+                noContent.style.display = 'block'
+
+            }
+
+        }
+
+    </script>
+
+
+
 
     <script src="js/script.js"></script>
+    <script src="lib/swiper/swiper-bundle.min.js"></script>
+
 
 
 </body>

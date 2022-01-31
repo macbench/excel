@@ -186,6 +186,138 @@ iframe {
 
 
 
+.btn-ex1{
+    display: flex;
+    width: 100%;
+   /* justify-content: center;*/
+}
+
+.exe-1{
+    display: flex;
+    padding: 3px;
+    width: 100%;
+    color: #fff;
+
+    margin: 0 400px 0 150px;
+    background-color: #038065;
+}
+
+.exe-1 img{
+    width: 160px;
+}
+
+.exe-1 .txt1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    font-size: 1.5em;
+}
+
+.exe-1 span{
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 1225px) {
+    .exe-1{
+        margin: 0 300px 0 150px;
+    }
+}
+@media screen and (max-width: 1106px) {
+    .exe-1{
+        margin: 0 200px 0 150px;
+    }
+}
+@media screen and (max-width: 1012px) {
+    .exe-1{
+        margin: 0 200px 0 150px;
+    }
+    .exe-1 .txt1{
+        font-size: 1.2em;
+    }
+    
+}
+@media screen and (max-width: 920px) {
+    .exe-1{
+        margin: 0 50px 0 100px;
+    }
+    .exe-1 .txt1{
+        font-size: 1.2em;
+    }
+    
+}
+@media screen and (max-width: 826px) {
+    .exe-1{
+        margin: 0 50px 0 50px;
+    }
+    .exe-1 .txt1{
+        font-size: 1.2em;
+    }
+    
+}
+
+@media screen and (max-width: 675px) {
+    .exe-1{
+        margin: 0 50px 0 50px;
+    }
+    .exe-1 .txt1{
+        font-size: 1em;
+    }
+    
+}
+
+@media screen and (max-width: 610px) {
+    .exe-1{
+        margin: 0 20px 0 20px;
+    }
+    .exe-1 .txt1{
+        font-size: 1em;
+    }
+    
+}
+@media screen and (max-width: 550px) {
+    .exe-1{
+        margin: 0 20px 0 20px;
+    }
+    .exe-1 .txt1{
+        font-size: 1em;
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width: 553px) {
+    .exe-1{
+        margin: 0 20px 0 20px;
+    }
+    .exe-1 .txt1{
+        padding: 0 15px;
+
+        font-size: .95em;
+        flex-direction: column;
+    }
+    .exe-1 img{
+        width: 150px;
+    }
+    
+    .exe-1 span{
+        margin: 0 15px;
+    }
+    
+
+    .des{
+       display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
 
 
 

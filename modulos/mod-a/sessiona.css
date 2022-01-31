@@ -14,6 +14,20 @@
     width: 0px;
 }
 
+
+/*PRELOADER*/
+
+#preloader{
+    background: #f5f7f6 url(../../img/load.gif) no-repeat center;
+    background-size: 550px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -75,84 +89,26 @@ header {
     font-weight: 400;
 }
 
-/*Animation*/
-/*FRAMES*/
-@keyframes light-contact {
-
-    50% {
-        color:#5e5d5d5e;
-    }
-}
-.contacto {
+/**********************************/
+.back {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: .8em;
-    font-weight: 400;
-    padding: 20px;
-    margin: 5px 5px 5px 0;
-    text-align: center;
-    border-radius: 22px;
-    background-color: #ff000044;
-    color: #fff;
-    position: relative;
+    font-weight: 600;
+    line-height: 50px;
+    width: 80px;
+  /*  background-color: #ff000044;*/
     cursor: pointer;
-    animation-name: light-contact;
-    animation-duration: 2.1s;
-    animation-iteration-count: infinite;
+    color: #fff;
 }
 
-.sapp{
-    font-size: 1.7em;
+.seta {
+    font-size: 36px;
 }
 
 
-/*SILDER*/
-.swiper-container{
-    overflow: hidden
-}
 
-.home{
-   /* padding:.1rem 9%;*/
-    margin-top: 48px;
-    color: red;
-   /* background-color: lightgray;*/
-    
-}
-.home .home-slider .slide{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap:2rem; 
-   /* padding-top: 2rem;*/
-
-}
-
-.home .home-slider .slide .content{
-    flex:1 1 45rem;
-}
-
-.home .home-slider .slide .image{
-    flex:1 1 45rem;
-}
-
-.home .home-slider .slide .image img{
-    width: 100%;
-}
-
-/*
-.home .home-slider .slide .content p{
-    color:var(--light-color);
-    font-size: 2.2rem;
-    padding:.5rem 0;
-    line-height: 1.5;
-}
-*/
-.swiper-pagination-bullet-active{
-    background:var(--cabecalho);
-}
-
-/*SLIDER END*/
 
 section {
     flex: 1 0 auto;
@@ -176,7 +132,7 @@ section {
 .welcome {
     font-size: 2.5em;
     text-align: center;
-    margin:30px 0 5px 0;
+    margin: 90px 0 5px 0;
     width: 100%;
 }
 .sub-come{

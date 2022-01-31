@@ -33,6 +33,7 @@
 }
 .msg-dev h2{
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .mod-txt {
@@ -102,7 +103,7 @@ i {
         text-align: justify;
         max-width: 1200px;
        /* min-width: 300px;*/
-        margin: 25px 10px;
+        margin: 25px 13px;
     
     }
     
@@ -115,11 +116,12 @@ i {
     
     .msg-dev {
         margin-top: 35px;
-        font-size: .9em;
+        font-size: 1em;
     
     }
     .msg-dev h2{
-        margin-bottom: 15px;
+        margin-bottom: 18px;
+        font-size: 1.45em;
     }
     
     .mod-txt {

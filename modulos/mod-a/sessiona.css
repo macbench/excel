@@ -1,3 +1,7 @@
+*{
+    box-shadow: inset 0px 0px 2px rgba(255,0,0,0.8);
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
 
@@ -189,7 +193,6 @@ iframe {
 .btn-ex1{
     display: flex;
     width: 100%;
-   /* justify-content: center;*/
 }
 
 .exe-1{
@@ -197,130 +200,138 @@ iframe {
     padding: 3px;
     width: 100%;
     color: #fff;
-
-    margin: 0 400px 0 150px;
+    margin: 0 50px;
     background-color: #038065;
 }
 
 .exe-1 img{
-    width: 160px;
+    width: 150px;
+    filter: contrast(120%);
 }
 
 .exe-1 .txt1{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 30px;
-    font-size: 1.5em;
+    padding: 0 8px;
+    width: 100%;
 }
 
 .exe-1 span{
     font-weight: 600;
+    font-size: 1.7em;
 }
 
+.des{
+   font-size: 1.2em;
+   text-align: center;
+ }
 
-@media screen and (max-width: 1225px) {
-    .exe-1{
-        margin: 0 300px 0 150px;
-    }
-}
-@media screen and (max-width: 1106px) {
-    .exe-1{
-        margin: 0 200px 0 150px;
-    }
-}
-@media screen and (max-width: 1012px) {
-    .exe-1{
-        margin: 0 200px 0 150px;
-    }
-    .exe-1 .txt1{
+ @media screen and (max-width: 740px) {
+    .exe-1 span{
         font-size: 1.2em;
     }
     
-}
-@media screen and (max-width: 920px) {
-    .exe-1{
-        margin: 0 50px 0 100px;
-    }
-    .exe-1 .txt1{
-        font-size: 1.2em;
-    }
+    .des{
+       font-size: 1em;
+       text-align: center;
+     }
     
-}
-@media screen and (max-width: 826px) {
-    .exe-1{
-        margin: 0 50px 0 50px;
-    }
-    .exe-1 .txt1{
-        font-size: 1.2em;
-    }
-    
-}
+ }
 
-@media screen and (max-width: 675px) {
-    .exe-1{
-        margin: 0 50px 0 50px;
-    }
-    .exe-1 .txt1{
-        font-size: 1em;
-    }
-    
-}
-
-@media screen and (max-width: 610px) {
-    .exe-1{
-        margin: 0 20px 0 20px;
-    }
-    .exe-1 .txt1{
-        font-size: 1em;
-    }
-    
-}
-@media screen and (max-width: 550px) {
-    .exe-1{
-        margin: 0 20px 0 20px;
-    }
-    .exe-1 .txt1{
-        font-size: 1em;
-        flex-direction: column;
-    }
-    
-}
-@media screen and (max-width: 553px) {
-    .exe-1{
-        margin: 0 20px 0 20px;
-    }
-    .exe-1 .txt1{
-        padding: 0 15px;
-
-        font-size: .95em;
-        flex-direction: column;
-    }
+ @media screen and (max-width: 570px) {
     .exe-1 img{
-        width: 150px;
+        width: 120px;
     }
     
     .exe-1 span{
-        margin: 0 15px;
+        font-size: 1em;
     }
     
-
     .des{
-       display: none;
+       font-size: .8em;
+       text-align: center;
+     }
+    
+ }
+
+ @media screen and (max-width: 500px) {
+    .exe-1{
+        margin: 0 20px;
     }
     
+ }
+
+
+
+
+ @media screen and (max-width: 425px) {
+    .btn-ex1{
+        display: flex;
+        width: 100%;
+    }
+    
+    .exe-1{
+        display: flex;
+        padding: 3px;
+        width: 100%;
+        color: #fff;
+        margin: 0 10px;
+        background-color: #038065;
+    }
+    
+    .exe-1 img{
+        width: 120px;
+        filter: contrast(120%);
+    }
+    
+    .exe-1 .txt1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 8px;
+        font-size: 1em;
+        width: 100%;
+    }
+    
+    .exe-1 span{
+        font-weight: 600;
+        font-size: .85em;
+    }
+    
+    .des{
+       font-size: .7em;
+       text-align: center;
+     }
 }
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 370px) {
+    .exe-1 span{
+        font-size: .8em;
+    }
+    .des{
+       font-size: .6em;
+     }
+}
+@media screen and (max-width: 348px) {
+    .exe-1 img{
+        width: 110px;
+    }
+    
+    .exe-1 span{
+        font-size: .7em;
+    }
+    .des{
+       font-size: .6em;
+     }
+}
+@media screen and (max-width: 327px) {
+    .exe-1 span{
+        font-size: .65em;
+    }
+    .des{
+       font-size: .56em;
+     }
+}
 
 
 

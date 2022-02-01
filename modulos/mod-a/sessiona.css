@@ -102,7 +102,7 @@ header {
     align-items: center;
     font-weight: 600;
     line-height: 50px;
-    width: 80px;
+    width: 90px;
   /*  background-color: #ff000044;*/
     cursor: pointer;
     color: #fff;
@@ -431,17 +431,6 @@ footer {
 }
 @media screen and (max-width:320px) {
     
-    .logo {
-        flex-grow: .9;
-        font-size: 0.85em;
-  
-    }
-    .contacto {
-        font-size: .65em;
-        padding: 10px;
-        border-radius: 24px;
-    }  
-    
     .welcome {
         font-size: 1.35em;
     }
@@ -454,3 +443,73 @@ footer {
 
 
 
+@media screen and (max-width:490px) {
+    .seta {
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (max-width:430px) {
+    .back {
+        line-height: 50px;
+        width: 50px;
+    }
+    
+}
+@media screen and (max-width:320px) {
+    .back {
+        line-height: 50px;
+        width: 45px;
+    }
+    
+    .seta {
+        font-size: 22px;
+    }
+    
+
+}
+
+
+
+
+@media screen and (max-width:490px) {
+    
+    .logo {
+        font-size: 1.1em;
+  
+    }
+        
+}
+@media screen and (max-width:460px) {
+    
+    .logo {
+        font-size: 1em;
+        width: 180px;
+  }
+    }
+@media screen and (max-width:430px) {
+    .logo {
+        font-size: .93em;
+        width: 180px;
+  
+    }
+    
+}
+@media screen and (max-width:385px) {
+    
+    .logo {
+        font-size: 1em;
+  
+    }
+        
+}
+@media screen and (max-width:320px) {
+    
+    .logo {
+        flex-grow: .9;
+        font-size: 0.85em;
+  
+    }
+        
+}

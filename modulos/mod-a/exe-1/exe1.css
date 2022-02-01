@@ -158,12 +158,6 @@ footer {
     }
     
 }
-@media screen and (max-width:460px) {
-    .seta {
-        font-size: 28px;
-    }
-    
-}
 
 @media screen and (max-width:430px) {
     .back {
@@ -171,9 +165,6 @@ footer {
         width: 50px;
     }
     
-    .seta {
-        font-size: 22px;
-    }
     
 
 }
@@ -197,29 +188,6 @@ footer {
     
     .logo {
         font-size: 1.1em;
-  
-    }
-        
-}
-@media screen and (max-width:460px) {
-    
-    .logo {
-        font-size: 1em;
-        width: 180px;
-  }
-    }
-@media screen and (max-width:430px) {
-    .logo {
-        font-size: .93em;
-        width: 180px;
-  
-    }
-    
-}
-@media screen and (max-width:385px) {
-    
-    .logo {
-        font-size: 0.9em;
   
     }
         

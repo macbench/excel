@@ -21,12 +21,13 @@
 }
 .main-intro{
     position: relative;
-    margin-bottom: 400px;
+    margin-bottom: 410px;
 }
 .wave{
     z-index: 2;
     position: absolute;
     left: 40%;
+    filter: brightness(97.5%);
 }
 
 .msg-intro{
@@ -35,7 +36,8 @@
     padding: 12px;
     border-radius: 10px;
     position: absolute;
-    top: 202.5px;
+    top: 150.5px;
+    box-shadow: 0.5px -0.9px 4.5px #00000060;
 }
 
 .msg-dev {
@@ -71,31 +73,32 @@
 
 }
 
-
+/*
 i {
     font-size: 55px;
 }
-
+*/
 .works .school {
-    background-color: #ff721ae2;
+    background-color: #0c7068e2;
     width: 300px;
     height: 250px;
-    border-radius: 20px;
+    border-radius: 35px;
     text-align: center;
     cursor: pointer;
     margin: 20px ;
+    color: #fff;
 
-    box-shadow: 0px 7px 1px #7e4300e0;
+    box-shadow: 0px 10px 1px #09524cf1;
 }
 
 .school:hover {
-    background-color: #c96d04;
+    background-color: #0a4f49e2;
     color: #fff;
-    box-shadow: 0px 7px 1px #ed8107e0;
+    box-shadow: 0px 10px 1px #0c7068e2;
 }
 
 .school:active {
-    box-shadow: 0px -7px 1px #7e4300e0;
+    box-shadow: 0px -10px 1px #0c7068e2;
 
 }
 
@@ -104,6 +107,7 @@ i {
     font-weight: 700;
     font-size: 1.9em;
     margin-top: 20px;
+    
 }
 
 
@@ -142,18 +146,23 @@ i {
     
 }
 
+@media screen and (max-width:809px){
+    .main-intro{
+        margin-bottom: 500px;
+    }
+
 
 @media screen and (max-width:768px){
     .main-intro{
         margin-bottom: 400px;
     }
-    
+}   
 .wave{
-    left: 30%;
-    width: 150px;
+    left: 28.5%;
+    width: 200px;
 }
 .msg-intro{
-    top: 151.8px;
+    top: 105.5px;
 }
 
 

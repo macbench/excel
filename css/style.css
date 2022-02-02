@@ -152,6 +152,10 @@ header {
     background:var(--cabecalho);
 }
 
+.swiper-pagination {
+   position: initial;
+}
+
 /*SLIDER END*/
 
 section {

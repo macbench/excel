@@ -2,24 +2,24 @@
 let questions = [
     {
     numb: 1,
-    question: "Nas opções abaixo selecione aquela que descreve melhor uma <strong>Célula</strong>",
-    answer: "É o cruzamento entre uma coluna e uma linha",
+    question: "Nas opções abaixo selecione aquela que descreve melhor uma <strong>Célula.</strong>",
+    answer: "B) É o cruzamento entre uma coluna e uma linha",
     options: [
-      "É apenas uma linha selecionada",
-      "É o cruzamento entre uma coluna e uma linha",
-      "É uma coluna interia selecionada",
-      "Nenhuma das opções"
+      "A) É apenas uma linha selecionada",
+      "B) É o cruzamento entre uma coluna e uma linha",
+      "C) É uma coluna interia selecionada",
+      "D) Nenhuma das opções"
     ]
   }, 
     {
     numb: 2,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "Qual é a função de uma Cécula?",
+    answer: "D) Todas às alínes estão correctas",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "A) Armazenar números",
+      "B) Escrever textos",
+      "C) Fazer operações por meio de fórmulas",
+      "D) Todas às alínes estão correctas"
     ]
   },
     {

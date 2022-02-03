@@ -8,29 +8,31 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
 }
 
 .txt {
     font-size: 18pt;
     text-align: justify;
     max-width: 1200px;
-   /* min-width: 300px;*/
+    /* min-width: 300px;*/
     margin: 25px 30px;
 
 }
-.main-intro{
+
+.main-intro {
     position: relative;
     margin-bottom: 410px;
 }
-.wave{
+
+.wave {
     z-index: 2;
     position: absolute;
     left: 40%;
     filter: brightness(97.5%);
 }
 
-.msg-intro{
+.msg-intro {
     font-size: .96em;
     background-color: #11995542;
     padding: 12px;
@@ -44,7 +46,8 @@
     font-size: .9em;
 
 }
-.msg-dev h2{
+
+.msg-dev h2 {
     margin-bottom: 15px;
     text-align: center;
 }
@@ -85,7 +88,7 @@ i {
     border-radius: 35px;
     text-align: center;
     cursor: pointer;
-    margin: 20px ;
+    margin: 20px;
     color: #fff;
 
     box-shadow: 0px 10px 1px #09524cf1;
@@ -107,60 +110,65 @@ i {
     font-weight: 700;
     font-size: 1.9em;
     margin-top: 20px;
-    
+
 }
 
 
 
 
 /***************** MODAL *******************/
-.modal{
+.modal {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
-   position: fixed;
+    position: fixed;
     width: 100%;
     height: 100vh;
     background-color: #000000b4;
     visibility: hidden;
     opacity: 0;
     transition: .3s;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-.modal:target{
+.modal:target {
     opacity: 1;
     visibility: visible;
 }
-.modal-content{
+
+.modal-content {
     background-color: #fff;
     width: 90%;
     max-width: 900px;
     min-width: 310px;
     height: 580px;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     border-radius: 5px;
     border-top: .5rem solid var(--cabecalho);
 }
-.modal-title{
+
+.modal-title {
     margin-bottom: 1rem;
     text-align: center;
     padding-bottom: .5em;
     border-bottom: solid 1px silver;
 }
-.modal-description{
+
+.modal-description {
     text-align: justify;
 }
-.btn-ok{
+
+.btn-ok {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
 
 }
-.modal-link{
+
+.modal-link {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -170,10 +178,12 @@ i {
     color: #fff;
     background-color: var(--azul-fonte);
 }
-.modal-link:hover{
+
+.modal-link:hover {
     background-color: #023047e9;
 }
-.modal-link:active{
+
+.modal-link:active {
     background-color: #02273a;
 }
 
@@ -181,80 +191,133 @@ i {
 
 
 
+/***************** MIDIAS QUERYS *******************/
+@media screen and (max-width:809px) {
+    .main-intro {
+        margin-bottom: 500px;
+    }
+}
 
 
-@media screen and (max-width:768px){
+
+@media screen and (max-width:768px) {
 
     .txt {
         font-size: 12pt;
         text-align: justify;
         max-width: 1200px;
-       /* min-width: 300px;*/
-        margin: 25px 13px;
-    
+        /* min-width: 300px;*/
+        margin: 25px 45px;
+
     }
-    
-    .msg-intro{
+
+    .msg-intro {
         font-size: .96em;
         background-color: #11995542;
         padding: 12px;
         border-radius: 10px;
+        top: 105.2px;
+
     }
-    
+
     .msg-dev {
         font-size: 1em;
-    
+
     }
-    .msg-dev h2{
+
+    .msg-dev h2 {
         margin-bottom: 18px;
         font-size: 1.45em;
     }
-    
+
     .mod-txt {
         text-align: center;
         font-size: 18px;
         margin: 30px 0 15px 0;
     }
-    
+
+
+    .main-intro {
+        margin-bottom: 250px;
+    }
+
+    .wave {
+        left: 38.2%;
+        width: 200px;
+    }
+
 }
 
-@media screen and (max-width:809px){
-    .main-intro{
-        margin-bottom: 500px;
+
+@media screen and (max-width:640px) {
+    .txt {
+        font-size: 12pt;
+        text-align: justify;
+        max-width: 1200px;
+        /* min-width: 300px;*/
+        margin: 25px 15px;
+
     }
 
 
-@media screen and (max-width:768px){
-    .main-intro{
+    .modal-content {
+        height: 600px;
+        padding: 2rem 1.5rem;
+
+    }
+    .modal-description {
+        font-size: .99em;
+    }
+    .main-intro {
         margin-bottom: 400px;
     }
-}   
-.wave{
-    left: 28.5%;
-    width: 200px;
-}
-.msg-intro{
-    top: 105.2px;
-}
+
+    .wave {
+        left: 28.5%;
+        width: 200px;
+    }
 
 
 }
-@media screen and (max-width:414px){
 
-    .modal-content{
-        height: 550px;
-    }    
+@media screen and (max-width:425px) {
+    .modal-content {
+        height: 540px;
 
-  }
+    }
 
-  @media screen and (max-width:374px){
-    .modal-description{
-        font-size: .9em;
-    }  
+}
 
-    .modal-content{
-        height: 500px;
-    }    
 
-  }
+@media screen and (max-width:414px) {
+    .modal-title {
+        font-size: 1.2em;
+    }
 
+    .modal-content {
+        height: 520px;
+
+    }
+
+}
+@media screen and (max-width:375px) {
+    .modal-description {
+        font-size: .88em;
+    }
+    .modal-content {
+        height: 480px;
+    }
+
+}
+@media screen and (max-width:360px) {
+    .modal-description {
+        font-size: .89em;
+    }
+
+}
+@media screen and (max-width:320px) {
+    .modal-description {
+        font-size: .85em;
+    }
+
+}

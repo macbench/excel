@@ -255,9 +255,15 @@ i {
         text-align: justify;
         max-width: 1200px;
         /* min-width: 300px;*/
-        margin: 25px 15px;
+        margin: 25px 19px;
 
     }
+    .msg-intro, 
+    .msg-dev {
+        font-size: .92em;
+
+    }
+
 
 
     .modal-content {

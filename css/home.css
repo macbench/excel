@@ -42,6 +42,14 @@
     box-shadow: 0.5px -0.9px 5px #0000001e;
 }
 
+
+.secDiv{
+    border: solid 2px silver;
+    border-radius: 15px;
+    padding: 0 20px 20px 20px;
+}
+
+
 .msg-dev {
     font-size: .9em;
 
@@ -258,9 +266,12 @@ i {
         margin: 25px 19px;
 
     }
-    .msg-intro, 
-    .msg-dev {
+    .msg-intro{
         font-size: .92em;
+
+    }
+    .msg-dev {
+        font-size: .88em;
 
     }
 

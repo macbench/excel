@@ -15,14 +15,15 @@
     --azul-fonte: #023047;
 
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 0px;
 }
 
 
 /*PRELOADER*/
 
-#preloader{
+#preloader {
     background: #f5f7f6 url(../../img/load.gif) no-repeat center;
     background-size: 550px;
     height: 100vh;
@@ -40,7 +41,8 @@
     top: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none; border:none;
+    outline: none;
+    border: none;
     transition: all .2s linear;
 
 }
@@ -49,6 +51,7 @@ a {
     color: var(--azul-fonte);
     text-decoration: none;
 }
+
 /*
 html{
     overflow: hidden;
@@ -69,7 +72,7 @@ header {
     background-color: var(--cabecalho);
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 45px;
     justify-content: space-between;
     position: fixed;
     z-index: 999;
@@ -80,17 +83,17 @@ header {
 .logo {
     display: flex;
     justify-content: center;
-    flex-grow: .9;
     font-size: 1.2em;
     font-weight: 600;
-    line-height: 50px;
+    line-height: 45px;
     text-align: center;
     width: 180px;
-   /* background-color: #ff000044;*/
+    /* background-color: #ff000044;*/
 
     color: #fff;
 }
-.light{
+
+.light {
     font-weight: 400;
 }
 
@@ -101,15 +104,16 @@ header {
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    line-height: 50px;
+    line-height: 45px;
     width: 90px;
-  /*  background-color: #ff000044;*/
+    /*  background-color: #ff000044;*/
     cursor: pointer;
     color: #fff;
 }
 
 .seta {
     font-size: 36px;
+    margin-left: 10px;
 }
 
 
@@ -140,7 +144,8 @@ section {
     margin: 90px 0 5px 0;
     width: 100%;
 }
-.sub-come{
+
+.sub-come {
     padding: 5px 10px;
     font-size: 1.8em;
     text-align: center;
@@ -181,22 +186,23 @@ iframe {
 
 
 
-.off{
+.off {
     margin-top: 35px;
 }
-.description{
+
+.description {
     text-align: center;
     font-size: .9em;
-} 
+}
 
 
 
-.btn-ex1{
+.btn-ex1 {
     display: flex;
     width: 100%;
 }
 
-.exe-1{
+.exe-1 {
     display: flex;
     padding: 3px;
     width: 100%;
@@ -205,12 +211,12 @@ iframe {
     background-color: #038065;
 }
 
-.exe-1 img{
+.exe-1 img {
     width: 150px;
     filter: contrast(120%);
 }
 
-.exe-1 .txt1{
+.exe-1 .txt1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,128 +224,15 @@ iframe {
     width: 100%;
 }
 
-.exe-1 span{
+.exe-1 span {
     font-weight: 600;
     font-size: 1.7em;
 }
 
-.des{
-   font-size: 1.2em;
-   text-align: center;
- }
-
- @media screen and (max-width: 740px) {
-    .exe-1 span{
-        font-size: 1.2em;
-    }
-    
-    .des{
-       font-size: 1em;
-       text-align: center;
-     }
-    
- }
-
- @media screen and (max-width: 570px) {
-    .exe-1 img{
-        width: 120px;
-    }
-    
-    .exe-1 span{
-        font-size: 1em;
-    }
-    
-    .des{
-       font-size: .8em;
-       text-align: center;
-     }
-    
- }
-
- @media screen and (max-width: 500px) {
-    .exe-1{
-        margin: 0 20px;
-    }
-    
- }
-
-
-
-
- @media screen and (max-width: 425px) {
-    .btn-ex1{
-        display: flex;
-        width: 100%;
-    }
-    
-    .exe-1{
-        display: flex;
-        padding: 3px;
-        width: 100%;
-        color: #fff;
-        margin: 0 10px;
-        background-color: #038065;
-    }
-    
-    .exe-1 img{
-        width: 120px;
-        filter: contrast(120%);
-    }
-    
-    .exe-1 .txt1{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 8px;
-        font-size: 1em;
-        width: 100%;
-    }
-    
-    .exe-1 span{
-        font-weight: 600;
-        font-size: .85em;
-    }
-    
-    .des{
-       font-size: .7em;
-       text-align: center;
-     }
+.des {
+    font-size: 1.2em;
+    text-align: center;
 }
-@media screen and (max-width: 370px) {
-    .exe-1 span{
-        font-size: .8em;
-    }
-    .des{
-       font-size: .6em;
-     }
-}
-@media screen and (max-width: 348px) {
-    .exe-1 img{
-        width: 110px;
-    }
-    
-    .exe-1 span{
-        font-size: .7em;
-    }
-    .des{
-       font-size: .6em;
-     }
-}
-@media screen and (max-width: 327px) {
-    .exe-1 span{
-        font-size: .65em;
-    }
-    .des{
-       font-size: .56em;
-     }
-}
-
-
-
-
-
-
-
 
 
 
@@ -366,150 +259,217 @@ footer {
     font-size: .7em;
 }
 
-.copy a{
-    color:#fff;   
+.copy a {
+    color: #fff;
 }
-.copy a:hover{
+
+.copy a:hover {
     text-decoration: underline;
 }
 
 
 
 /********************************/
+
+
+@media screen and (max-width: 740px) {
+    .exe-1 span {
+        font-size: 1.2em;
+    }
+
+    .des {
+        font-size: 1em;
+        text-align: center;
+    }
+
+}
+
+
+
 @media screen and (max-width:670px) {
     .welcome {
         font-size: 1.9em;
     }
-    .sub-come{
+
+    .sub-come {
         font-size: 1.2em;
     }
-   
+
 }
 
-@media screen and (max-width:490px) {
-    
-    .logo {
-        flex-grow: .9;
-        font-size: 1.1em;
-  
+
+@media screen and (max-width: 570px) {
+    .exe-1 img {
+        width: 120px;
     }
-        
-}
-@media screen and (max-width:460px) {
-    
-    .logo {
-        flex-grow: .8;
+
+    .exe-1 span {
         font-size: 1em;
-        width: 180px;
-  
     }
+
+    .des {
+        font-size: .8em;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .exe-1 {
+        margin: 0 20px;
+    }
+
+}
+
+
+
+@media screen and (max-width:490px) {
+    .seta {
+        font-size: 25px;
+    }
+    .logo {
+        font-size: 1.1em;
+
+    }
+
+
+}
+
+@media screen and (max-width:460px) {
+
     .welcome {
         font-size: 1.5em;
     }
-    .sub-come{
+
+    .sub-come {
         font-size: 1em;
     }
-      
-}   
+
+}
+
 @media screen and (max-width:430px) {
+    .back {
+        width: 70px;
+    }
     .logo {
         flex-grow: .8;
         font-size: .93em;
-        width: 180px;
-  
+        width: 230px;
+
     }
-    
+
+
 }
+
+@media screen and (max-width: 425px) {
+    .btn-ex1 {
+        display: flex;
+        width: 100%;
+    }
+
+    .exe-1 {
+        display: flex;
+        padding: 3px;
+        width: 100%;
+        color: #fff;
+        margin: 0 10px;
+        background-color: #038065;
+    }
+
+    .exe-1 img {
+        width: 120px;
+        filter: contrast(120%);
+    }
+
+    .exe-1 .txt1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 8px;
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .exe-1 span {
+        font-weight: 600;
+        font-size: .85em;
+    }
+
+    .des {
+        font-size: .7em;
+        text-align: center;
+    }
+}
+
+
 @media screen and (max-width:385px) {
-    
+
     .logo {
         flex-grow: .9;
         font-size: 0.9em;
-  
+
     }
-        
+
 }
+@media screen and (max-width: 370px) {
+    .exe-1 span {
+        font-size: .8em;
+    }
+
+    .des {
+        font-size: .6em;
+    }
+}
+
+@media screen and (max-width: 348px) {
+    .exe-1 img {
+        width: 110px;
+    }
+
+    .exe-1 span {
+        font-size: .7em;
+    }
+
+    .des {
+        font-size: .6em;
+    }
+}
+
+@media screen and (max-width: 327px) {
+    .exe-1 span {
+        font-size: .65em;
+    }
+
+    .des {
+        font-size: .56em;
+    }
+}
+
+
+
+
+
 @media screen and (max-width:320px) {
+
+    .logo {
+        flex-grow: .9;
+        font-size: 0.85em;
+
+    }
     
     .welcome {
         font-size: 1.35em;
     }
-    .sub-come{
+
+    .sub-come {
         font-size: 1em;
     }
-    
-        
-}
 
-
-
-@media screen and (max-width:490px) {
-    .seta {
-        font-size: 30px;
-    }
-    
-}
-
-@media screen and (max-width:430px) {
     .back {
         line-height: 50px;
-        width: 50px;
+        width: 40px;
     }
-    
-}
-@media screen and (max-width:320px) {
-    .back {
-        line-height: 50px;
-        width: 45px;
-    }
-    
-    .seta {
-        font-size: 22px;
-    }
-    
-
-}
 
 
 
-
-@media screen and (max-width:490px) {
-    
-    .logo {
-        font-size: 1.1em;
-  
-    }
-        
-}
-@media screen and (max-width:460px) {
-    
-    .logo {
-        font-size: 1em;
-        width: 180px;
-  }
-    }
-@media screen and (max-width:430px) {
-    .logo {
-        font-size: .93em;
-        width: 180px;
-  
-    }
-    
-}
-@media screen and (max-width:385px) {
-    
-    .logo {
-        font-size: 1em;
-  
-    }
-        
-}
-@media screen and (max-width:320px) {
-    
-    .logo {
-        flex-grow: .9;
-        font-size: 0.85em;
-  
-    }
-        
 }

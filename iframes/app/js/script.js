@@ -160,7 +160,7 @@ function showResult(){
 
     if (userScore > 3){ // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
-        let scoreTag = '<br>Parabéns! 🎉, Você acertou <strong>'+ userScore +'</strong> dentro de<strong>'+ questions.length +' questões</strong><br><br>';
+        let scoreTag = '<br>Parabéns! 🎉, Você acertou <strong>'+ userScore +'</strong> dentro de <strong>'+ questions.length +' questões</strong><br><br>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
         star.innerHTML = oneStar + oneStar + oneStar ;
         pontuacao

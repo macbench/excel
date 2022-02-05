@@ -51,7 +51,7 @@ header {
     background-color: var(--cabecalho);
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 45px;
     justify-content: space-between;
     position: fixed;
     z-index: 999;
@@ -65,7 +65,7 @@ header {
     flex-grow: 3;
     font-size: 1.2em;
     font-weight: 600;
-    line-height: 50px;
+    line-height: 45px;
     text-align: center;
     width: 200px;
    /* background-color: #ff000044;*/
@@ -151,7 +151,7 @@ footer {
 
 
 
-
+/*
 @media screen and (max-width:490px) {
     .seta {
         font-size: 30px;
@@ -181,13 +181,13 @@ footer {
 
 }
 
-
+*/
 
 
 @media screen and (max-width:490px) {
     
     .logo {
-        font-size: 1.1em;
+        font-size: 1em;
   
     }
         

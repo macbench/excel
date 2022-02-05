@@ -9,6 +9,8 @@ const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
+const pontos = document.querySelector('.pontos')
+
 
 // if startQuiz button clicked
 start_btn.onclick = ()=>{
@@ -151,25 +153,32 @@ function showResult(){
     result_box.classList.add("activeResult"); //show result box
     const scoreText = result_box.querySelector(".score_text");
     const star = document.querySelector(".stars");
+    let oneStar = '<i class="fas fa-star"></i>';
+
+    score_pontos = userScore * 20
+    pontuacao = pontos.innerHTML = 'Pontuação geral: ' + score_pontos + '%'
+
     if (userScore > 3){ // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
         let scoreTag = '<br>Parabéns! 🎉, Você acertou <strong>'+ userScore +'</strong> dentro de<strong>'+ questions.length +' questões</strong><br><br>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
-        let oneStar = '<i class="fas fa-star"></i>';
         star.innerHTML = oneStar + oneStar + oneStar ;
+        pontuacao
     }
     else if(userScore > 1){ // if user scored more than 1
         let scoreTag = '<br>😎 Acertou <strong>'+ userScore +'</strong> dentro de <strong>'+ questions.length +' questões</strong> <br><br>';
         scoreText.innerHTML = scoreTag;
-        let oneStar = '<i class="fas fa-star"></i>';
         star.innerHTML = oneStar + oneStar;
+        pontuacao
+
 
     }
     else{ // if user scored less than 1
         let scoreTag = '<br>😐 Apenas acertou <strong>'+ userScore +'</strong> dentro de <strong>'+ questions.length +' questões </strong> <br>Parece que precisa de revisar alguns conceitos!<br><br>';
         scoreText.innerHTML = scoreTag;
-        let oneStar = '<i class="fas fa-star"></i>';
         star.innerHTML = oneStar;
+        pontuacao
+
 
     }
 }
@@ -219,3 +228,4 @@ function queCounter(index){
     let totalQueCounTag = '<span>'+'Questão &nbsp;'+'<p>'+ index +'</p> de <p>'+ questions.length +'</p></span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
+

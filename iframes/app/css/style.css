@@ -353,6 +353,13 @@ footer button.show{
     margin-bottom: 10px;
 }
 
+.result_box .pontos{
+    color: #007bff;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+
 .result_box .complete_text{
     font-size: 20px;
     font-weight: 700;

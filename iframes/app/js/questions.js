@@ -13,7 +13,7 @@ let questions = [
   }, 
     {
     numb: 2,
-    question: "Qual é a função de uma Cécula?",
+    question: "Qual é a função de uma Célula?",
     answer: "D) Todas às alínes estão correctas",
     options: [
       "A) Armazenar números",

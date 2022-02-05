@@ -5,8 +5,8 @@
 /*PRELOADER*/
 
 #preloader{
-    background: #f5f7f6 url(../img/loader.gif) no-repeat center;
-    background-size: 550px;
+    background: #fff url(../img/load.gif) no-repeat center;
+    background-size: 235px;
     height: 100vh;
     width: 100%;
     position: fixed;

@@ -136,6 +136,14 @@
   .details .notification{
     font-size: 12px;
   }
+  .content .icone{
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+  }
+
   
   .toast .close-icon{
     font-size: 23px;
@@ -143,7 +151,7 @@
     height: 30px;
     width: 30px;
     margin-right: 8px;
-    line-height: 40px;
+    line-height: 30px;
     border-radius: 50%;
   }
   

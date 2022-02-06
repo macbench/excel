@@ -17,12 +17,13 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/slide.css">
     <link rel="stylesheet" href="css/filter-iframe.css">
     <link rel="stylesheet" href="settings/style.css">
 
     <!--CDN-->
     <!-- FONT AWESOME CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
@@ -35,14 +36,54 @@
     <title>Execel Básico</title>
 </head>
 
-<body>
+<body class="preload">
+
+    <header class="header">
+        <button class="header__button" id="btnNav" type="button">
+            <i class="material-icons">menu</i>
+        </button>
+        <div class="logo">Mac Account</div>
+    </header>
+
+    <nav class="nav">
+        <div class="nav__links">
+            <a href="#" class="nav__link nav__link--active">
+                <i class="material-icons">home</i>
+                Home
+            </a>
+            <a class="nav__link" href="#">
+                <i class="material-icons">book</i>
+                Módulos
+            </a>
+            <a class="nav__link" href="#">
+                <i class="material-icons">video_library</i>
+                Gravações da Aula
+            </a>
+            <a class="nav__link" href="#">
+                <i class="material-icons">quiz</i>
+                Exercícios
+            </a>
+            <a class="nav__link" href="https://chat.whatsapp.com/Hi1kkVoE9g4LQlrqzJ2lNb">
+                <i class="material-icons">whatsapp</i>
+                Aderir ao grupo
+            </a>
+
+            <a class="nav__link" href="#">
+                <i class="material-icons">info</i>
+                About
+            </a>
+        </div>
+        <div class="nav__overlay"></div>
+    </nav>
+
+    <!--
     <header>
         <div class="logo">Curso de Excel |&nbsp;<div class="light"> Básico</div>
         </div>
         <a href="https://chat.whatsapp.com/Hi1kkVoE9g4LQlrqzJ2lNb" class="contacto"> <i
                 class="fab fa-whatsapp sapp"></i>&nbsp;&nbsp; Aderir ao grupo</a>
     </header>
-
+-->
     <!-- home section starts  -->
 
     <section class="home" id="home">
@@ -294,6 +335,7 @@
 
     <div id="preloader"></div>
 
+    <script src="js/menu.js"></script>
     <script src="lib/swiper/swiper-bundle.min.js"></script>
 
 

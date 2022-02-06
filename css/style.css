@@ -26,6 +26,120 @@
 
 }
 
+
+body{
+    --header-height: 50px;
+
+    margin: var(--header-height) 0 0 0;
+    font-family: sans-serif;
+}
+.preload *{
+    transition: none !important;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    background: #037b4d;
+    display: flex;
+    z-index: 900;
+    box-shadow: 0px .5px 8px #00000052;
+
+}
+
+.header__button{
+    width: var(--header-height);
+    flex-shrink: 0;
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav__links{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100vh;
+    width: 250px;
+    background: #fff;
+    transform: translateX(-250px);
+    transition: transform 0.2s;
+}
+
+.nav--open .nav__links{
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav__link{
+    display: flex;
+    align-items: center;
+    color: #666666;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: transform 0.3s;
+
+}
+
+.nav__link > i{
+    margin-right: 15px;
+}
+.nav__link--active{
+    color: #009578;
+    background: lightgray;
+}
+
+.nav__link--active,
+.nav__link:hover{
+    background-color: #eeeeee;
+}
+
+
+.nav__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 2;
+
+}
+
+.nav--open .nav__overlay{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    line-height: 45px;
+    width: 80%;
+    font-weight: 600;
+}
+
+
+/**************CODIGO ANTERIOR****************/
+
+
+
+
+
 a {
     color: var(--azul-fonte);
     text-decoration: none;
@@ -45,7 +159,7 @@ body {
     color: #fff;
 
 }
-
+/*
 header {
     background-color: var(--cabecalho);
     display: flex;
@@ -67,7 +181,7 @@ header {
     line-height: 50px;
     text-align: center;
     width: 180px;
-   /* background-color: #ff000044;*/
+    background-color: #ff000044;
 
     color: #fff;
 }
@@ -75,8 +189,6 @@ header {
     font-weight: 400;
 }
 
-/*Animation*/
-/*FRAMES*/
 @keyframes light-contact {
 
     50% {
@@ -105,7 +217,7 @@ header {
 .sapp{
     font-size: 1.7em;
 }
-
+*/
 
 /*SILDER*/
 .swiper-container{
@@ -114,7 +226,7 @@ header {
 
 .home{
    /* padding:.1rem 9%;*/
-    margin-top: 48px;
+   /* margin-top: 48px;*/
     color: red;
    /* background-color: lightgray;*/
     
@@ -290,23 +402,8 @@ footer {
    
 }
 
-@media screen and (max-width:490px) {
-    
-    .logo {
-        flex-grow: .9;
-        font-size: 1.1em;
-  
-    }
-        
-}
 @media screen and (max-width:460px) {
     
-    .logo {
-        flex-grow: .8;
-        font-size: 1em;
-        width: 180px;
-  
-    }
     .welcome {
         font-size: 1.5em;
     }
@@ -314,32 +411,9 @@ footer {
         font-size: 1em;
     }
       
-}   
-@media screen and (max-width:430px) {
-    .logo {
-        flex-grow: .8;
-        font-size: .93em;
-        width: 180px;
-  
-    }
-    
-}
-@media screen and (max-width:385px) {
-    
-    .logo {
-        flex-grow: .9;
-        font-size: 0.9em;
-  
-    }
-        
 }
 @media screen and (max-width:320px) {
     
-    .logo {
-        flex-grow: .9;
-        font-size: 0.85em;
-  
-    }
     .contacto {
         font-size: .65em;
         padding: 10px;

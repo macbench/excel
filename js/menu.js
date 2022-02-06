@@ -13,4 +13,15 @@ document.addEventListener("DOMContentLoaded", () =>{
         nav.classList.remove("nav--open")
     })
 
+    document.querySelector('.voltar').addEventListener("click", ()=>{
+        nav.classList.remove("nav--open")
+    })
+
 })
+
+
+//This code used to rotate drop icon(-180deg)
+
+$('.li .second').click(function () {
+    $('.li .second span').toggleClass("rotate");
+});

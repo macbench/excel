@@ -22,8 +22,6 @@
     padding: 0;
     box-sizing: border-box;
     outline: none; border:none;
-    transition: all .2s linear;
-
 }
 
 
@@ -90,17 +88,21 @@ body{
 
 }
 
+.voltar {
+    cursor: pointer;
+}
+
+
 .nav__link > i{
     margin-right: 15px;
 }
-.nav__link--active{
-    color: #009578;
-    background: lightgray;
-}
 
-.nav__link--active,
-.nav__link:hover{
+.nav__link:active,
+.nav__link:hover,
+.modulos .li a:active{
+    color: #009578;
     background-color: #eeeeee;
+   
 }
 
 
@@ -133,6 +135,76 @@ body{
     font-weight: 600;
 }
 
+/******* EXTRAS *******/
+.ul {
+    left: 0;
+    display: none;
+}
+
+:checked+.ul {
+    display: block;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label > i{
+    margin-right: 15px;
+}
+label > span{
+    margin-left: 100px;
+}
+
+.ul .li {
+    cursor: pointer;
+
+}
+
+ .li a {
+    text-decoration: none;
+    display: block;
+}
+
+ .ul {
+    position: static;
+}
+
+ .ul .li a {
+    color: #666666;
+}
+
+.li span {
+    transition: 0.5s;
+}
+
+ .li span.rotate {
+    transform: rotate(-180deg);
+}
+
+input {
+    display: none;
+}
+
+.modulos{
+    z-index: 999;
+
+}
+.modulos .li{
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+}
+
+.modulos .li a{
+    display: flex;
+    align-items: center;
+    color: #666666;
+}
+.modulos .li a > i{
+    margin-right: 15px;
+}
 
 /**************CODIGO ANTERIOR****************/
 

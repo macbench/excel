@@ -10,7 +10,11 @@
 
     <!--SWIPERR-->
     <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css" />
+    <!--Animations Divs fade with AOS Library-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--JQUERY TO HELP IN ROTATE ON MENU-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
 
 
 
@@ -45,41 +49,79 @@
         <div class="logo">Mac Account</div>
     </header>
 
+    <!--MENU HERE-->
+
     <nav class="nav">
         <div class="nav__links">
             <div class="nav__links">
-                <div  class="nav__link voltar">
+                <div class="nav__link voltar">
                     <i class="material-icons">arrow_back</i>
                 </div>
-    
-            <a href="#" class="nav__link nav__link--active">
-                <i class="material-icons">home</i>
-                Home
-            </a>
-            <a class="nav__link" href="#">
-                <i class="material-icons">book</i>
-                Módulos
-            </a>
-            <a class="nav__link" href="#">
-                <i class="material-icons">video_library</i>
-                Gravações da Aula
-            </a>
-            <a class="nav__link" href="#">
-                <i class="material-icons">quiz</i>
-                Exercícios
-            </a>
-            <a class="nav__link" href="https://chat.whatsapp.com/Hi1kkVoE9g4LQlrqzJ2lNb">
-                <i class="material-icons">whatsapp</i>
-                Aderir ao grupo
-            </a>
 
-            <a class="nav__link" href="#">
-                <i class="material-icons">info</i>
-                About
-            </a>
-        </div>
-        <div class="nav__overlay"></div>
+                <a href="#" class="nav__link">
+                    <i class="material-icons">home</i>
+                    Home
+                </a>
+
+
+
+                    <!--Modulos >> MENU HERE-->
+
+                <div class="nav__link">
+                    <div class="li">
+                        <label for="btn-3" class="second">
+                            <i class="material-icons">collections_bookmark</i>
+                            Módulos
+                            <span class="material-icons">arrow_drop_down</span>
+                        </label>
+
+                        <input type="checkbox" id="btn-3">
+
+                        <div class="ul modulos">
+                            <div class="li">
+                                <a href="modulos/mod-a/session-a.html">
+                                    <i class="material-icons">play_lesson</i>
+                                    Módulo A
+                                </a>
+                            </div>
+                            <div class="li">
+                                <a href="#modal">
+                                    <i class="material-icons">play_lesson</i>
+                                    Módulo B
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <!--End Modulos >> MENU HERE-->
+
+
+
+
+                <a class="nav__link" href="#">
+                    <i class="material-icons">video_library</i>
+                    Gravações da Aula
+                </a>
+                <a class="nav__link" href="#">
+                    <i class="material-icons">quiz</i>
+                    Exercícios
+                </a>
+                <a class="nav__link" href="https://chat.whatsapp.com/Hi1kkVoE9g4LQlrqzJ2lNb">
+                    <i class="material-icons">whatsapp</i>
+                    Aderir ao grupo
+                </a>
+
+                <a class="nav__link" href="#">
+                    <i class="material-icons">info</i>
+                    About
+                </a>
+            </div>
+            <div class="nav__overlay"></div>
     </nav>
+
+    <!--FINAL MENU-->
+
 
     <!--
     <header>

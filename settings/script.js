@@ -23,9 +23,9 @@ window.onload = ()=>{
                 closeIcon.onclick = ()=>{ //hide toast notification on close icon click
                     wrapper.classList.add("hide");
                 }
-                setTimeout(()=>{ //hide the toast notification automatically after 2.5 seconds
+                setTimeout(()=>{ //hide the toast notification automatically after 1 seconds
                     wrapper.classList.add("hide");
-                }, 2500);
+                }, 1000);
             }else{
                 offline(); //calling offline function if ajax status is not equal to 200 or not less that 300
             }

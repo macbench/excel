@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 .contentor{
   position: absolute;
-  top: 20px;
+  top: 55px;
   left: 20px;
   animation: show_toast 1s ease forwards;
   z-index: 1000;

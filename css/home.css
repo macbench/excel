@@ -82,7 +82,7 @@
     background-color: #5856561c;
     flex-wrap: wrap;
     margin: auto;
-    padding: 20px 0 40px 0;
+    padding: 20px 0 150px 0;
 
 
 }
@@ -123,6 +123,12 @@ i {
     margin-top: 20px;
 
 }
+.works .school i {
+    line-height: 90px;
+    font-size: 55px;
+
+}
+
 
 
 

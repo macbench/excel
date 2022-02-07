@@ -23,11 +23,12 @@ window.onload = ()=>{
                 closeIcon.onclick = ()=>{ //hide toast notification on close icon click
                     wrapper.classList.add("hide");
                 }
-                setTimeout(()=>{ //hide the toast notification automatically after 1 seconds
+                setTimeout(()=>{ //hide the toast notification automatically after .985 seconds
                     wrapper.classList.add("hide");
-                }, 1000);
+                }, 985);
             }else{
                 offline(); //calling offline function if ajax status is not equal to 200 or not less that 300
+                
             }
         }
         xhr.onerror = ()=>{
@@ -40,7 +41,7 @@ window.onload = ()=>{
         wrapper.classList.remove("hide");
         toast.classList.add("offline");
         title.innerText = "Você está offline";
-        subTitle.innerText = "Verifique a sua internet!";
+        subTitle.innerText = "Verifique a sua conexão!";
         wifiIcon.innerHTML = '<i class="uil uil-wifi-slash"></i>';
         title.style.color='gray'
         subTitle.style.color='gray'

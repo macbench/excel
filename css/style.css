@@ -159,7 +159,12 @@ label > span{
 
 .ul .li {
     cursor: pointer;
+    border-bottom: solid 1px silver;
+    
 
+}
+.ul .li:last-child{
+    border: none;
 }
 
  .li a {
@@ -173,6 +178,7 @@ label > span{
 
  .ul .li a {
     color: #666666;
+    padding-bottom: 10px;
 }
 
 .li span {
@@ -194,7 +200,7 @@ input {
 .modulos .li{
     padding: 10px;
     margin: 10px 0;
-    width: 200px;
+    width: 220px;
 }
 
 .modulos .li a{
@@ -445,7 +451,7 @@ footer {
     height: 40px;
     background-color: var(--rodape);
     font-weight: 300;
-    margin-top: 250px;
+   /* margin-top: 250px;*/
 }
 
 .copy {

@@ -66,14 +66,14 @@ body {
 
 }
 
-body{
+body {
     --header-height: 50px;
 
     margin: var(--header-height) 0 0 0;
     font-family: sans-serif;
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -86,7 +86,7 @@ body{
 
 }
 
-.header__button{
+.header__button {
     width: var(--header-height);
     flex-shrink: 0;
     background: none;
@@ -96,10 +96,14 @@ body{
     cursor: pointer;
     padding-left: 8px;
     font-size: 12.8px;
-    line-height: var(--header-height);
 }
 
-.logo{
+.header__button i {
+    line-height: var(--header-height);
+
+}
+
+.logo {
     display: flex;
     justify-content: center;
     line-height: 45px;
@@ -380,6 +384,7 @@ footer {
         text-align: center;
     }
 }
+
 @media screen and (max-width: 370px) {
     .exe-1 span {
         font-size: .8em;
@@ -419,7 +424,7 @@ footer {
 
 
 @media screen and (max-width:320px) {
-    
+
     .welcome {
         font-size: 1.35em;
     }

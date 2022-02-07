@@ -1,4 +1,8 @@
-
+/*
+*{
+    box-shadow: inset 0px 0px 2px rgba(255,0,0,0.8);
+}
+*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
 
 :root {
@@ -88,10 +92,14 @@ body{
 
 }
 
-.voltar {
+.fundo-menu {
+    background-image: url(../img/fundo-menu.jpg);
+    background-size: 100%;
+    padding-bottom: 60px;
+    background-position: center;
+    color: #fff;
     cursor: pointer;
 }
-
 
 .nav__link > i{
     margin-right: 15px;
@@ -105,15 +113,26 @@ body{
    
 }
 
+.overlay_first{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    transition: opacity 0.3s;
+    z-index: 980;
+    display: none;
 
+}
 .nav__overlay{
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(2px);
+    background:transparent;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s;
@@ -125,6 +144,7 @@ body{
     visibility: visible;
     opacity: 1;
 }
+
 
 
 .logo{
@@ -159,12 +179,12 @@ label > span{
 
 .ul .li {
     cursor: pointer;
-    border-bottom: solid 1px silver;
+    border-top: solid 1px silver;
     
 
 }
 .ul .li:last-child{
-    border: none;
+    border-bottom: solid 1px silver;
 }
 
  .li a {
@@ -178,9 +198,10 @@ label > span{
 
  .ul .li a {
     color: #666666;
+}
+.segundo{
     padding-bottom: 10px;
 }
-
 .li span {
     transition: 0.5s;
 }

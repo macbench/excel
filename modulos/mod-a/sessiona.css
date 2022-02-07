@@ -94,7 +94,7 @@ body {
     border: none;
     color: #fff;
     cursor: pointer;
-    padding-left: 8px;
+    padding-left: 8px; 
     font-size: 12.8px;
 }
 
@@ -221,7 +221,7 @@ iframe {
 }
 
 .exe-1 img {
-    width: 150px;
+    width: 180px;
     filter: contrast(120%);
 }
 
@@ -235,11 +235,11 @@ iframe {
 
 .exe-1 span {
     font-weight: 600;
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 .des {
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -361,7 +361,7 @@ footer {
     }
 
     .exe-1 img {
-        width: 120px;
+        width: 110px;
         filter: contrast(120%);
     }
 
@@ -380,47 +380,19 @@ footer {
     }
 
     .des {
-        font-size: .7em;
+        font-size: .8em;
         text-align: center;
     }
 }
-
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 375px) {
     .exe-1 span {
         font-size: .8em;
     }
 
     .des {
-        font-size: .6em;
+        font-size: .72em;
     }
 }
-
-@media screen and (max-width: 348px) {
-    .exe-1 img {
-        width: 110px;
-    }
-
-    .exe-1 span {
-        font-size: .7em;
-    }
-
-    .des {
-        font-size: .6em;
-    }
-}
-
-@media screen and (max-width: 327px) {
-    .exe-1 span {
-        font-size: .65em;
-    }
-
-    .des {
-        font-size: .56em;
-    }
-}
-
-
-
 
 
 @media screen and (max-width:320px) {
@@ -432,5 +404,17 @@ footer {
     .sub-come {
         font-size: 1em;
     }
+    .exe-1 img {
+        width: 108px;
+    }
+
+    .exe-1 span {
+        font-size: .62em;
+    }
+
+    .des {
+        font-size: .6em;
+    }
+
 
 }

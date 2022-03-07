@@ -26,9 +26,8 @@
 
     <!--CDN-->
     <!-- FONT AWESOME CDN-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -45,7 +44,7 @@
 
     <header class="header">
         <button class="header__button" id="btnNav" type="button">
-            <i class="material-icons">menu</i>
+            <span class="material-icons-sharp">menu</span>
         </button>
         <div class="logo">Mac Account</div>
     </header>
@@ -56,12 +55,16 @@
         <div class="nav__links">
             <div class="nav__links">
                 <div class="nav__link fundo-menu">
-                    <i class="material-icons voltar">arrow_back</i>
+                    <i class="material-icons-sharp voltar">arrow_back</i>
                 </div>
 
                 <a href="#" class="nav__link" id="homePage">
-                    <i class="material-icons">home</i>
+                    <i class="material-icons-sharp">home</i>
                     Home
+                </a>
+                <a href="#" class="nav__link" id="homePage">
+                    <i class="material-icons-sharp">person_outline</i>
+                    Perfil
                 </a>
 
 
@@ -71,9 +74,9 @@
                 <div class="nav__link">
                     <div class="li">
                         <label for="btn-3" class="second">
-                            <i class="material-icons">collections_bookmark</i>
+                            <i class="material-icons-sharp">collections_bookmark</i>
                             Módulos
-                            <span class="material-icons">arrow_drop_down</span>
+                            <span class="material-icons-sharp">arrow_drop_down</span>
                         </label>
 
                         <input type="checkbox" id="btn-3">
@@ -81,13 +84,13 @@
                         <div class="ul modulos">
                             <div class="li">
                                 <a href="modulos/mod-a/session-a.html">
-                                    <i class="material-icons">play_lesson</i>
+                                    <i class="material-icons-sharp">class</i>
                                     Módulo A
                                 </a>
                             </div>
                             <div class="li">
                                 <a href="#modal" class="segundo">
-                                    <i class="material-icons">play_lesson</i>
+                                    <i class="material-icons-sharp">class</i>
                                     Módulo B
                                 </a>
                             </div>
@@ -101,22 +104,28 @@
 
 
                 <a class="nav__link" href="#">
-                    <i class="material-icons">video_library</i>
+                    <i class="material-icons-sharp">video_library</i>
                     Gravações da Aula
                 </a>
                 <a class="nav__link" href="#">
-                    <i class="material-icons">quiz</i>
+                    <i class="material-icons-sharp">quiz</i>
                     Exercícios
                 </a>
                 <a class="nav__link" href="https://chat.whatsapp.com/Hi1kkVoE9g4LQlrqzJ2lNb">
-                    <i class="material-icons">group_add</i>
+                    <i class="material-icons-sharp">groups</i>
                     Aderir ao grupo
                 </a>
 
                 <a class="nav__link" href="#">
-                    <i class="material-icons">info</i>
-                    About
+                    <i class="material-icons-sharp">info</i>
+                  Sobre nós
                 </a>
+
+                <a class="nav__link logout" href="#">
+                    <i class="material-icons-sharp">logout</i>
+                    Sair
+                </a>
+
             </div>
             <div class="nav__overlay"></div>
     </nav>
@@ -171,25 +180,6 @@
     </section>
 
     <!-- home section ends -->
-
-
-
-    <!-- Conexao -->
-
-    <div class="contentor">
-        <div class="toast">
-            <div class="content">
-                <div class="icone"><i class="uil uil-wifi"></i></div>
-                <div class="details">
-                    <span class="span">Online</span>
-                    <p class="notification">Conexão estabelecida!</p>
-                </div>
-            </div>
-            <div class="close-icon"><i class="uil uil-times"></i></div>
-        </div>
-    </div>
-
-    <!-- Conexao ends -->
 
 
 
@@ -251,12 +241,12 @@
         <div class="works">
             <a href="modulos/mod-a/session-a.html" class="school one">
                 <p>MÓDULO A</p>
-                <i class="material-icons">play_lesson</i>
+                <i class="material-icons-sharp">class</i>
             </a>
 
             <a href="#modal" class="school two">
                 <p>MÓDULO B</p>
-                <i class="material-icons">play_lesson</i>
+                <i class="material-icons-sharp">class</i>
             </a>
         </div>
 
@@ -388,10 +378,6 @@
 
 
     <script src="js/script.js"></script>
-
-    <!-- Conexao -->
-    <script src="settings/script.js"></script>
-    <!-- Conexao -->
 
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

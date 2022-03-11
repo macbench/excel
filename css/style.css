@@ -41,6 +41,19 @@ body{
 }
 
 
+
+.mainColor{
+    width: 100%;
+    max-width: 85%;
+    margin: auto;
+    background: rgb(253, 253, 253);
+    box-shadow: 0 0 50px #00000036;
+   
+}
+
+
+
+
 .header{
     position: fixed;
     top: 0;
@@ -92,8 +105,12 @@ body{
 
 }
 
+.nav__link i{
+    font-size: 1.45rem;
+
+}
 .nav__link h3{
-    font-size: .75rem;
+    font-size: .72rem;
     font-weight: 500;
 
 }
@@ -103,6 +120,12 @@ body{
 }
 
 .fundo-menu {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 12px 15px;
+    background: transform 0.3s;
+
     background: #009578;
     padding-bottom: 60px;
     background-position: center;
@@ -508,7 +531,18 @@ footer {
 
 
 /********************************/
+@media screen and (max-width:768px) {
+    .mainColor{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+}
+
+
 @media screen and (max-width:670px) {
+    
     .welcome {
         font-size: 1.9em;
     }

@@ -45,6 +45,8 @@
 
 .secDiv{
     border: solid 2px #11995542;
+    background: white;
+
     border-radius: 15px;
     padding: 0 20px 20px 20px;
     box-shadow: 0.2px 1px 6px #0000001e;
@@ -245,6 +247,7 @@ i {
     .msg-dev h2 {
         margin-bottom: 18px;
         font-size: 1.45em;
+        
     }
 
     .mod-txt {

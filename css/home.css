@@ -73,8 +73,43 @@
 
 
 
+.contador{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1rem;
+
+}
+.contador div{
+    padding: 100px;
+    text-align: center;
+}
+.contador i{
+    font-size: 2.5rem;
+}
+.contador h2{
+    font-size: 1.3rem;
+}
+
+.contador h3{
+    font-size: 1.5rem;
+}
+.contador .short{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 15px;
+    border: dotted 3px var(--azul-fonte);
+    width: 150px;
+    height: 150px;
 
 
+}
 .works {
     display: flex;
     /* width: 800px;*/
@@ -89,11 +124,7 @@
 
 }
 
-/*
-i {
-    font-size: 55px;
-}
-*/
+
 .works .school {
     background-color: #0c7068e2;
     width: 300px;
@@ -130,7 +161,6 @@ i {
     font-size: 60px;
 
 }
-
 
 
 

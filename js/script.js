@@ -1,5 +1,13 @@
 
 
+  //LOADER CODE
+
+  var loader = document.querySelector('#preloader')
+  window.addEventListener("load", function () {
+      loader.style.display = "none"
+  })
+
+
 //CONTENT TO BE FILTER (Cntt)
 var Ex1 = document.querySelector('.ex1')
 var Ex2 = document.querySelector('.ex2')
@@ -79,9 +87,13 @@ var swiper = new Swiper(".home-slider", {
   });
   
 
-  //LOADER CODE
+  //CONTADOR
 
-  var loader = document.querySelector('#preloader')
-  window.addEventListener("load", function () {
-      loader.style.display = "none"
+  $(document).ready(function(){
+    $(".counter").counterUp({
+      delay: 10,
+      time: 1000,
+      once: true
+
+    })
   })

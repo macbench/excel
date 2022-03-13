@@ -106,17 +106,17 @@ body{
 }
 
 .nav__link i{
-    font-size: 1.45rem;
+    font-size: 1.5rem;
 
 }
 .nav__link h3{
-    font-size: .72rem;
+    font-size: .8rem;
     font-weight: 500;
 
 }
 
 .logout{
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 }
 
 .fundo-menu {
@@ -283,10 +283,6 @@ a {
     color: var(--azul-fonte);
     text-decoration: none;
 }
-/*
-html{
-    overflow: hidden;
-}*/
 html, body {
     height: 100%;
 }
@@ -298,84 +294,16 @@ body {
     color: #fff;
 
 }
-/*
-header {
-    background-color: var(--cabecalho);
-    display: flex;
-    width: 100%;
-    height: 50px;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 999;
-    box-shadow: 0px .5px 8px #00000052;
-
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    flex-grow: .9;
-    font-size: 1.2em;
-    font-weight: 600;
-    line-height: 50px;
-    text-align: center;
-    width: 180px;
-    background-color: #ff000044;
-
-    color: #fff;
-}
-.light{
-    font-weight: 400;
-}
-
-@keyframes light-contact {
-
-    50% {
-        color:#5e5d5d5e;
-    }
-}
-.contacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: .8em;
-    font-weight: 400;
-    padding: 20px;
-    margin: 5px 5px 5px 0;
-    text-align: center;
-    border-radius: 22px;
-    background-color: #ff000044;
-    color: #fff;
-    position: relative;
-    cursor: pointer;
-    animation-name: light-contact;
-    animation-duration: 2.1s;
-    animation-iteration-count: infinite;
-}
-
-.sapp{
-    font-size: 1.7em;
-}
-*/
-
-/*SILDER*/
+/*----------------SILDER-----------------*/
 .swiper-container{
     overflow: hidden
 }
 
-.home{
-   /* padding:.1rem 9%;*/
-   /* margin-top: 48px;*/
-    color: red;
-   /* background-color: lightgray;*/
-    
-}
 .home .home-slider .slide{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap:2rem; 
-   /* padding-top: 2rem;*/
 
 }
 
@@ -407,7 +335,7 @@ header {
    position: initial;
 }
 
-/*SLIDER END*/
+/*-------------SLIDER END---------------*/
 
 section {
     flex: 1 0 auto;
@@ -436,7 +364,7 @@ section {
 }
 .sub-come{
     padding: 5px 10px;
-    font-size: 1.8em;
+    font-size: 27px;
     text-align: center;
     margin: 0 0 30px 0;
     width: 100%;
@@ -512,7 +440,6 @@ footer {
     height: 40px;
     background-color: var(--rodape);
     font-weight: 300;
-   /* margin-top: 250px;*/
 }
 
 .copy {
@@ -564,11 +491,6 @@ footer {
 }
 @media screen and (max-width:320px) {
     
-    .contacto {
-        font-size: .65em;
-        padding: 10px;
-        border-radius: 24px;
-    }  
     
     .welcome {
         font-size: 1.35em;

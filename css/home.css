@@ -12,7 +12,7 @@
 }
 
 .txt {
-    font-size: 18pt;
+    font-size: 19px;
     text-align: justify;
     max-width: 1200px;
     /* min-width: 300px;*/
@@ -22,25 +22,36 @@
 
 .main-intro {
     position: relative;
-    margin-bottom: 410px;
+    margin-bottom: 550px;
 }
 
 .wave {
     z-index: 2;
     position: absolute;
-    left: 40%;
+    left: 38%;
     filter: brightness(97.5%);
 }
 
 .msg-intro {
-    font-size: .96em;
-    background-color: #11995542;
-    padding: 12px;
-    border-radius: 10px;
     position: absolute;
     top: 150.5px;
-    box-shadow: 0.5px -0.9px 5px #0000001e;
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
+
+.msg-intro p{
+    padding: 35px;
+    padding-top: 40px;
+    border-radius: 10px;
+    background-color: #11995542;
+    max-width: 780px;
+
+    box-shadow: 0.5px -0.9px 5px #0000001e;
+
+}
+
 
 
 .secDiv{
@@ -48,17 +59,14 @@
     background: white;
 
     border-radius: 15px;
-    padding: 0 20px 20px 20px;
+    padding: 0 40px 40px 40px;
     box-shadow: 0.2px 1px 6px #0000001e;
     overflow: hidden;
+    max-width: 800px;
+
 
 }
 
-
-.msg-dev {
-    font-size: .9em;
-
-}
 
 .msg-dev h2 {
     margin-bottom: 15px;
@@ -179,7 +187,8 @@
     visibility: hidden;
     opacity: 0;
     transition: .3s;
-    margin-top: 20px;
+    z-index: 999;
+
 }
 
 .modal:target {
@@ -194,6 +203,7 @@
     min-width: 310px;
     height: 580px;
     padding: 2rem 2rem;
+    margin-top: 20px;
     border-radius: 5px;
     border-top: .5rem solid var(--cabecalho);
 }
@@ -241,9 +251,18 @@
 
 
 /***************** MIDIAS QUERYS *******************/
-@media screen and (max-width:809px) {
+@media screen and (max-width:840px) {
     .main-intro {
-        margin-bottom: 500px;
+        margin-bottom: 600px;
+    }
+    .msg-intro p{
+        padding: 22px;
+        padding-top: 30px;
+    }
+
+    .secDiv{
+        padding: 0 22px 22px 22px;
+
     }
 }
 
@@ -262,10 +281,7 @@
 
     .msg-intro {
         font-size: .96em;
-        background-color: #11995542;
-        padding: 12px;
-        border-radius: 10px;
-        top: 105.2px;
+        top: 105.5px;
 
     }
 
@@ -288,7 +304,7 @@
 
 
     .main-intro {
-        margin-bottom: 250px;
+        margin-bottom: 450px;
     }
 
     .wave {
@@ -304,7 +320,6 @@
         font-size: 12pt;
         text-align: justify;
         max-width: 1200px;
-        /* min-width: 300px;*/
         margin: 25px 19px;
 
     }
@@ -328,7 +343,7 @@
         font-size: .99em;
     }
     .main-intro {
-        margin-bottom: 400px;
+        margin-bottom: 520px;
     }
 
     .wave {
@@ -341,7 +356,7 @@
 
 @media screen and (max-width:425px) {
     .modal-content {
-        height: 540px;
+        height: 520px;
 
     }
 

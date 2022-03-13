@@ -32,6 +32,12 @@ document.addEventListener("DOMContentLoaded", () =>{
             blure.style.display='none'
 
     })
+    document.querySelector('#mb').addEventListener("click", ()=>{
+        nav.classList.remove("nav--open")
+            blure.style.display='none'
+
+    })
+
 
 })
 
